@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+/* Обнуление отступов */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Общие стили body */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Underdog", system-ui;
+}
+
+/* Стили header */
+header {
+    position: sticky;
+    top: 0px;
+    height: fit-content;
+    background-color: #c11515;
+    box-sizing: border-box;
+}
+
+/* Стили .sticky__nav */
+.sticky__nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+/* Стили ссылок в меню */
+.sticky__nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Стили footer */
+footer {
+    margin-top: 30px;
+    height: 220px;
+    text-align: center;
+    background-image: url("media/footer-bg.png");
+}
+
+/* Стили заголовка подвала */
+.footer-heading {
+    padding-top: 60px;
+}
+
+/* Стили текста подвала */
+.footer__text {
+    margin-top: 20px;
+}
+
+/* Стили кнопки в подвале */
+.footer__button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 20px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 3s;
+    z-index: 1;
+}
+
+/* Стили блоков с классом block */
+.main__slogan,
+.main__image-block,
+.main__info,
+.main__about-game {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    line-height: 24px;
+    box-sizing: border-box;
+    transition: opacity ease-in-out 0.7s;
+}
+
+/* Стили main__content */
+.main-content {
+    overflow-x: hidden;
+}
+
+/* Стили main__slogan */
+.main__slogan {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+/* Стили main__image-block */
+.main__image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили main__info */
+.main__info {
+    float: right;
+    text-align: justify;
+    width: 50%;
+}
+
+/* Стили main__about-game */
+.main__about-game {
+    clear: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Стили main__image */
+.main__image {
+    height: 500px;
+    object-fit: cover;
+    content: url("media/Red-Dead-Redemption-2-image.jpg");
+}
+
+/* Стили main__about-image */
+.main__about-image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Общие стили для элементов с классом about */
+.about__hd,
+.about__screens,
+.about__dlc,
+.about__weapon {
+    width: 37%;
+    text-align: center;
+}
+
+/* Стили about__hd image */
+.about__hd .main__about-image {
+    margin-bottom:10px;
+    transition: opacity ease-in-out 0.5s;
+    content: url("media/Red-Dead-Redemption-2-hd.jpg");
+}
+
+/* Стили about__dlc image */
+.about__dlc .main__about-image {
+    margin-bottom:10px;
+    margin-top: 2%;
+    transition: opacity ease-in-out 1.5s;
+    content: url("media/Red-Dead-Redemption-2-dlc.jpg");
+}
+
+/* Стили about__hd */
+.about__hd {
+    margin-right: 3%;
+}
+
+/* Стили about__screens image */
+.about__screens .main__about-image {
+    margin-bottom:10px;
+    content: url("media/Red-Dead-Redemption-2-screen.jpg");
+}
+
+/* Стили about__weapon */
+.about__weapon {
+    text-align: left;
+    margin: 20px auto;
+    width: 45%;
+}
+
+/* Стили weapon span */
+.weapon span {
+    font-weight: bold;
+}
+
+/* Стили weapon__text */
+.weapon__text {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity ease-in-out 0.4s;
+}
+
+/* Стили weapon__list */
+.weapon__list {
+    margin-top: 10px;
+    position: relative;
+    transition: opacity ease-in-out 0.4s;
+}
